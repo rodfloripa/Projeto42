@@ -9,14 +9,12 @@
 
 <p align="justify">O método parte da premissa de que abordagens clássicas tratam palavras como independentes, ignorando relações semânticas profundas. Com o uso de modelos baseados em transformers, como o BERT, torna-se possível capturar o significado contextual das palavras, melhorando significativamente a qualidade das representações.</p>
 
-<p align="justify">O pipeline proposto no paper segue as etapas:</p>
+<p align="justify">O pipeline segue as etapas:</p>
 
 <p align="justify">
 1. Extração de embeddings com BERT<br>
-2. Clustering de palavras (formando “conceitos”)<br>
-3. Construção da matriz Concept-Document (CD)<br>
-4. Aplicação de TF-IDF<br>
-5. Clustering final dos documentos
+2. PCA
+3. Clustering com KMeans
 </p>
 
 <p align="justify">Esse método demonstrou ganhos relevantes em métricas como ARI (Adjusted Rand Index), alcançando valores próximos de 0.60 no dataset 20 Newsgroups.</p>
