@@ -13,7 +13,7 @@
 
 <p align="justify">
 1. Extração de embeddings com BERT<br>
-2. PCA
+2. PCA<br>
 3. Clustering com KMeans
 </p>
 
