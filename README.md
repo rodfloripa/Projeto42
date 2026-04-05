@@ -39,15 +39,19 @@
 
 <p align="justify">Os experimentos realizados demonstraram que a configuração da redução de dimensionalidade possui impacto direto na qualidade do clustering. Em particular, o uso de PCA preservando 90% da variância apresentou o melhor desempenho.</p>
 
-<p align="center">
+
+
+<div align="center">
+
 <b>Tabela: Comparativo de Métricas (ARI)</b>
-</p>
 
 | Configuração | ARI |
-|------|------|
-| NO_PCA | 0.4442 |
-| PCA_100 (63%) | 0.4426 |
-| PCA_90% | 0.4541 |
+|--------------|-----|
+| NO_PCA       | 0.44 |
+| PCA_100 (63%)| 0.44 |
+| PCA_90%      | 0.45 |
+
+</div>
 
 <p align="justify">Esse resultado evidencia um ponto fundamental: existe um equilíbrio entre remoção de ruído e preservação de informação. Reduções muito agressivas eliminam componentes relevantes, enquanto a ausência de redução mantém redundâncias que dificultam a separação dos clusters.</p>
 
