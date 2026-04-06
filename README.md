@@ -17,7 +17,7 @@
 3. Clustering com KMeans
 </p>
 
-<p align="justify">Esse método demonstrou ganhos relevantes em métricas como ARI (Adjusted Rand Index), alcançando valores próximos de 0.60 no dataset 20 Newsgroups.</p>
+<p align="justify">Esse método demonstrou ganhos relevantes em métricas como ARI (Adjusted Rand Index), alcançando valores próximos de 0.45( o artigo obteve 0.60) no dataset 20 Newsgroups.</p>
 
 ---
 
@@ -174,7 +174,9 @@ for seed in range(trials)
 
 <p align="justify">O projeto evoluiu de uma implementação complexa e pouco eficiente para uma abordagem moderna baseada em embeddings de sentença, alcançando resultados competitivos com menor custo computacional.</p>
 
-<p align="justify">O pipeline final apresenta um equilíbrio adequado entre simplicidade, desempenho e escalabilidade, sendo uma solução prática e eficaz para clustering de textos.</p>
+<p align="justify">O pipeline final apresenta um equilíbrio adequado entre simplicidade, desempenho e escalabilidade, sendo uma solução prática e eficaz para clustering de textos.O NRI do artigo é de 0.60, mas esta versão simplificada obteve 0.45 .
+
+</p>
 
 ---
 
