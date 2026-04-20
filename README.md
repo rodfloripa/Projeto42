@@ -88,6 +88,8 @@ print("Variância explicada:", np.sum(pca.explained_variance_ratio_))
 <p align="justify"><h3>5. Clustering Otimizado</h3></p>
 
 <p align="justify">O processo de clustering foi projetado para mitigar a variabilidade inerente ao algoritmo KMeans. Como a inicialização dos centroides influencia diretamente o resultado, foi adotada uma estratégia de múltiplas execuções com diferentes seeds. O uso de <b>k-means++</b> melhora a distribuição inicial dos centroides, enquanto o aumento do número de inicializações internas <b>n_init</b> reduz a probabilidade de convergência para mínimos locais.</p>
+
+```python
 def run_kmeans(X, labels, trials=5):
     best_ari = -1
 
@@ -109,6 +111,7 @@ def run_kmeans(X, labels, trials=5):
             best_ari = ari
 
     return best_ari
+```
 <p align="justify">Esse mecanismo garante maior robustez estatística, reduzindo a variância entre execuções e permitindo selecionar a melhor configuração possível.</p>
 
 ---
