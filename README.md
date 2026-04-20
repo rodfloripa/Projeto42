@@ -119,13 +119,28 @@ def run_kmeans(X, labels, trials=5):
 <p align="justify"><h3>7. Blocos Mais Importantes</h3></p>
 
 <p align="justify"><b>Embeddings:</b> Responsáveis por transformar texto em representações semânticas densas. Esse é o componente mais crítico do sistema, pois define a separabilidade dos dados.</p>
+
+```python
 embeddings = model.encode(...)
+```
+
 <p align="justify"><b>PCA:</b> Atuou como redução de dimensionalidade para acelerar o KMeans. O impacto na métrica ARI foi irrisório, indicando que os embeddings já estavam bem condicionados.</p>
+
+```python
 PCA(n_components=0.90)
+```
 <p align="justify"><b>Clustering:</b> Responsável pela segmentação final dos documentos com base na proximidade no espaço vetorial.</p>
+
+```python
 kmeans.fit_predict(X)
+```
+
 <p align="justify"><b>Multi-seed:</b> Garante estabilidade e robustez, evitando dependência de inicializações aleatórias.</p>
+
+```python
 for seed in range(trials)
+```
+
 ---
 
 <p align="justify"><h3>8. Principais Aprendizados</h3></p>
